@@ -7,15 +7,11 @@
  */
 return array(
   'names' => array(
-    'js/stlview.js' => 'f7777c34',
+    'js/stlview.js' => '5b4a5355',
   ),
   'symbols' => array(
-    'javelin-behavior-aviv-stl-viewer' => 'f7777c34',
+    'javelin-behavior-aviv-stl-viewer' => '5b4a5355',
   ),
-  'requires' => array(
-    'f7777c34' => array(
-      'javelin-behavior',
-    ),
-  ),
+  'requires' => array(),
   'packages' => array(),
 );
