@@ -1,0 +1,70 @@
+{
+  "linters": {
+    "chmod": {
+      "type": "chmod"
+    },
+    "filename": {
+      "type": "filename"
+    },
+    "generated": {
+      "type": "generated"
+    },
+    "javelin": {
+      "type": "javelin",
+      "include": "(\\.js$)"
+    },
+    "jshint-browser": {
+      "type": "jshint",
+      "include": "(\\.js$)"
+    },
+    "json": {
+      "type": "json",
+      "include": [
+        "(^src/docs/book/.*\\.book$)",
+        "(^support/lint/jshintrc$)",
+        "(^\\.arcconfig$)",
+        "(^\\.arclint$)",
+        "(\\.json$)"
+      ]
+    },
+    "merge-conflict": {
+      "type": "merge-conflict"
+    },
+    "nolint": {
+      "type": "nolint"
+    },
+    "phutil-library": {
+      "type": "phutil-library",
+      "include": "(\\.php$)"
+    },
+    "spelling": {
+      "type": "spelling"
+    },
+    "text": {
+      "type": "text",
+      "exclude": [
+        "(^src/(.*/)?__tests__/[^/]+/.*\\.(txt|json|expect))",
+        "(^docs/examples.*json)"
+      ]
+    },
+    "text-without-length": {
+      "type": "text",
+      "include": [
+        "(^src/(.*/)?__tests__/[^/]+/.*\\.(txt|json|expect))"
+      ],
+      "severity": {
+        "3": "disabled"
+      }
+    },
+    "phpast": {
+      "type": "phpast",
+      "include": "(\\.php$)",
+      "standard": "phutil.phpast",
+      "phpast.php-version": "8.1.0"
+    },
+    "phorge-modular-xact": {
+      "type": "phorge-modular-xact",
+      "include": "(\\.*Trans.*\\.php$)"
+    }
+  }
+}
