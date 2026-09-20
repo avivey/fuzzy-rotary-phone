@@ -17,4 +17,5 @@ final class StlViewCelerityResources extends CelerityResourcesOnDisk {
   private function getPath($to_file) {
     return (phutil_get_library_root('stlview')).'/'.$to_file;
   }
+
 }

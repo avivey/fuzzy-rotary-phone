@@ -32,38 +32,24 @@ final class StlViewDocEngine extends PhabricatorDocumentEngine {
     $raw_stl_uri = $ref->getFile()
       ->getViewURI();
 
-    $plat = phutil_tag(
-      'div',
-      array('id' => 'stl_viewer_div'));
-
-    $script = phutil_tag(
-      'script',
-      array(
-        'src' => '/stlview/hackjs/stl_viewer.min.js',
-      ));
-
-      $script = null;
+    $element_id = 'stl_viewer_div';
 
     $container = phutil_tag(
       'div',
       array(
-        'class' => 'document-engine-image online_3d_viewer',
+        'class' => 'document-engine-image ',
         'model' => $raw_stl_uri,
-        'style'=>"height: 600px;",
-      ),
-      array(
-        $script,
-        $plat,
+        'style' => 'height: 600px;',
+        'id' => $element_id,
       ));
 
     Javelin::initBehavior(
       'aviv-stl-viewer',
       array(
-        'element_id' => 'stl_viewer_div',
+        'element_id' => $element_id,
         'stl_uri' => $raw_stl_uri,
       ),
       'stlview');
-
 
     return $container;
   }

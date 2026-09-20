@@ -7,15 +7,15 @@
  */
 return array(
   'names' => array(
-    'js/o3dv.min.js' => 'be65c76b',
-    'js/stlview.js' => '5a3cc733',
+    'externals/o3dv.min.js' => '55f595ca',
+    'js/stlview.js' => '2b9853b0',
   ),
   'symbols' => array(
-    'javelin-behavior-aviv-stl-viewer' => '5a3cc733',
-    'online_3d_viewer' => 'be65c76b',
+    'javelin-behavior-aviv-stl-viewer' => '2b9853b0',
+    'online_3d_viewer' => '55f595ca',
   ),
   'requires' => array(
-    '5a3cc733' => array(
+    '2b9853b0' => array(
       'online_3d_viewer',
     ),
   ),
