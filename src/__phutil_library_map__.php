@@ -11,14 +11,12 @@ phutil_register_library_map(array(
   'class' => array(
     'StlViewApplication' => 'application/StlViewApplication.php',
     'StlViewCelerityResources' => 'celerity/StlViewCelerityResources.php',
-    'StlViewDocEngine' => 'engineextension/StlDocEngine.php',
-    'StlViewHacksController' => 'controller/StlViewHacksController.php',
+    'StlViewDocEngine' => 'engineextension/StlViewDocEngine.php',
   ),
   'function' => array(),
   'xmap' => array(
     'StlViewApplication' => 'PhabricatorApplication',
     'StlViewCelerityResources' => 'CelerityResourcesOnDisk',
     'StlViewDocEngine' => 'PhabricatorDocumentEngine',
-    'StlViewHacksController' => 'PhabricatorController',
   ),
 ));

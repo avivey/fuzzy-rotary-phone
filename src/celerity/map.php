@@ -7,11 +7,17 @@
  */
 return array(
   'names' => array(
-    'js/stlview.js' => '5b4a5355',
+    'js/o3dv.min.js' => 'be65c76b',
+    'js/stlview.js' => '5a3cc733',
   ),
   'symbols' => array(
-    'javelin-behavior-aviv-stl-viewer' => '5b4a5355',
+    'javelin-behavior-aviv-stl-viewer' => '5a3cc733',
+    'online_3d_viewer' => 'be65c76b',
   ),
-  'requires' => array(),
+  'requires' => array(
+    '5a3cc733' => array(
+      'online_3d_viewer',
+    ),
+  ),
   'packages' => array(),
 );

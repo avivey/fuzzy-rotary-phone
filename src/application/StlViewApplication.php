@@ -10,17 +10,4 @@ final class StlViewApplication extends PhabricatorApplication {
     return false;
   }
 
-public function getBaseURI()
-{
-  return '/stlview/';
-}
-
-  public function getRoutes() {
-    return array(
-      '/stlview/' => array(
-        'hackjs/(?P<path>.*)' => StlViewHacksController::class,
-      ),
-    );
-  }
-
 }

@@ -42,8 +42,15 @@ final class StlViewDocEngine extends PhabricatorDocumentEngine {
         'src' => '/stlview/hackjs/stl_viewer.min.js',
       ));
 
-    $container = phutil_tag_div(
-      'document-engine-image',
+      $script = null;
+
+    $container = phutil_tag(
+      'div',
+      array(
+        'class' => 'document-engine-image online_3d_viewer',
+        'model' => $raw_stl_uri,
+        'style'=>"height: 600px;",
+      ),
       array(
         $script,
         $plat,
