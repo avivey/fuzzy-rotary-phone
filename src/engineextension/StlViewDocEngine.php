@@ -38,7 +38,6 @@ final class StlViewDocEngine extends PhabricatorDocumentEngine {
       'div',
       array(
         'class' => 'document-engine-image ',
-        'model' => $raw_stl_uri,
         'style' => 'height: 600px;',
         'id' => $element_id,
       ));
